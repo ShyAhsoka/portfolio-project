@@ -3,10 +3,11 @@
     --heading-font-family:'Playfair Display', serif;
     --default-font-family:'Poppins', sans-serif;
     --secondary-color: #acbdc9;
+    --background-color: #343A40;
 }
 body {
     font-family: var(--default-font-family);
-    background-color: #343A40;
+    background-color: var(--background-color);
 }
 h1, h2, h3, h4, h5, h6{
     color: #9D9D9D;
@@ -38,14 +39,18 @@ p{
     padding: 160px 20px;
     font-size: 36px;
 }
-
+.about-section {
+    padding: 160px 20px;
+}
 .main p{
     font-size: 36px;
     font-weight: bold;
     margin: 0;
     color: #272142;
 }
-
+.navbar {
+    background-color: var(--background-color) !important;
+}
 .main h2{
     font-family: var(--heading-font-family);
     font-weight: normal;
@@ -56,14 +61,14 @@ p{
 .btn-branding {
     background: var(--branding-color);
     border-radius: 4px;
-    color: #343A40;
+    color: var(--background-color);
     font-size: 18px;
     line-height: 27px;
     padding: 15px 30px;
     transition: all 600ms ease-in-out;
 }
 .btn-branding:hover{
-    background-color: #343A40;
+    background-color: var(--background-color);
     color: var(--branding-color);
 }
 .btn-branding-outline{
@@ -85,9 +90,24 @@ p{
     padding: 40px 60px;
 }
 
+.about-section h1{
+    font-size: 64px;
+    line-height: 80px;;
+}
+
+.about-section h2{
+    font-size: 18px;
+    font-family: var(--default-font-family);
+}
+
+.about-section-content {
+    margin: 30px;
+}
+
 @media (max-width: 960px) {
     h1 {
         font-size: 44px;
+        line-height: 56px;
     }
     h2 {
         font-size: 44px;
@@ -99,7 +119,12 @@ p{
         padding: 0;
         text-align: center;
     }
+    .about-section {
+        text-align: center;
+        padding: 0;
+    }
 }
+
 img{
     border-radius: 20px;
     box-shadow: 0 0 1em #8898a8;
