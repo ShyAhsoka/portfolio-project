@@ -17,7 +17,6 @@ h1, h2, h3, h4, h5, h6{
 h1 {
     font-size: 96px;
     line-height: 1;
-    color: black;
 }
 
 h2{
@@ -32,14 +31,16 @@ p{
     line-height: 30px;
     color: #9D9D9D;
 }
-
+div.main h1{
+    color: black;
+}
 .main {
     background: var(--secondary-color);
     text-align: center;
     padding: 160px 20px;
     font-size: 36px;
 }
-.about-section {
+.content-container {
     padding: 160px 20px;
 }
 .main p{
@@ -85,25 +86,43 @@ p{
     background-color: var(--branding-color);
 }
 
-
 .project-description {
     padding: 40px 60px;
 }
 
-.about-section h1{
+.content h1{
     font-size: 64px;
     line-height: 80px;;
 }
 
-.about-section h2{
+.content-container h2{
     font-size: 18px;
     font-family: var(--default-font-family);
 }
 
-.about-section-content {
+.content h3 {
+    font-size: 24px;
+    margin: 20px 0 0;
+    font-family: var(--default-font-family);
+    line-height: 1.5;
+}
+
+.content p{
+    font-size: 14px;
+}
+
+.content {
     margin: 30px;
 }
 
+img{
+    border-radius: 20px;
+    box-shadow: 0 0 1em #8898a8;
+}
+
+div.work div{
+    align-content: center;
+}
 @media (max-width: 960px) {
     h1 {
         font-size: 44px;
@@ -119,13 +138,8 @@ p{
         padding: 0;
         text-align: center;
     }
-    .about-section {
+    .content{
         text-align: center;
         padding: 0;
     }
-}
-
-img{
-    border-radius: 20px;
-    box-shadow: 0 0 1em #8898a8;
 }
