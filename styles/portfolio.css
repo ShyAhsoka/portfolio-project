@@ -122,7 +122,9 @@ nav {
     font-family: var(--default-font-family);
     line-height: 1.5;
 }
-
+a.link {
+    margin: auto;
+}
 .content p{
     font-size: 20px;
 }
@@ -165,39 +167,9 @@ footer .email-link{
 
 }
 
-footer .email-link:hover {
-    color: var(--background-color);
-    background-color: var(--branding-color);
-    
-}
-
-footer .social-links a{
-    margin: 0 20px;
-    color: var(--background-color);
-    background-color: var(--secondary-color);
-    padding: 10px 14px;;
-    border-radius: 50%;
-    font-size: 18px;
-    transition: all 360ms ease-in-out;
-}
-
 footer .social-links a:hover{
     color: var(--secondary-color);
     background-color: var(--background-color);
-}
-
-div.content a{
-    text-decoration: none;
-    color: var(--background-color);
-    background-color: var(--branding-color);
-    padding: 10px 15px;
-    border-radius: 10px;
-    transition: all 360ms ease-in-out;
-}
-
-div.content a:hover{
-    color: var(--branding-color);
-    background-color:var(--background-color) ;
 }
 
 p.code .btn-branding{
@@ -212,7 +184,13 @@ p.code .btn-branding:hover{
     background-color: var(--branding-color);
     color: var(--background-color);
 }
-
+div.content a{
+    text-decoration: none;
+    color: var(--branding-color);
+}
+div.phone{
+    color: var(--branding-color);
+}
 
 @media (max-width: 960px) {
     h1 {
